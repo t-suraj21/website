@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBuzz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Navbar active">
+      <div class="menutoggle"></div>
+      <ul>
+        <li class="list">
+            <a href="#" style="--clr:#f44336;">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="text">Home</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="profile.html" style="--clr:#10a721;">
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                <span class="text">Profile</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#" style="--clr:#1abff1;">
+                <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                <span class="text">Contact</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#" style="--clr:#15128c;">
+                <span class="icon"><ion-icon name="image-outline"></ion-icon></span>
+                <span class="text">Photos</span>
+            </a>
+        </li>
+      </ul>
+    </div>
+     
+    <!-- post box -->
+    
+    <!-- Add Post Button on Main Page -->
+     <button id="postButton">Post Something</button>
+
+<!-- Post Box Section (Hidden Initially) -->
+     <div class="post-box" id="postBox" style="display: none;">
+       <textarea id="postText" placeholder="Write something..."></textarea>
+       <input type="file" id="postImage" accept="image/*" />
+       <button id="Postsubmit">Postsubmit</button>
+     </div>
+
+<!-- Section to Display Posted Content -->
+     <div class="posted-content" id="postedContent">
+    <!-- User posts will be displayed here -->
+     </div>
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

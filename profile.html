@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+   <!-- Navbar container -->
+   <div class="Navbar active">
+    <div class="menutoggle"></div>
+    <ul>
+      <li class="list">
+          <a href="index.html" style="--clr:#f44336;">
+              <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+              <span class="text">Home</span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="profile.html" style="--clr:#10a721;">
+              <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+              <span class="text">Profile</span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="#" style="--clr:#1abff1;">
+              <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+              <span class="text">Contact</span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="#" style="--clr:#15128c;">
+              <span class="icon"><ion-icon name="image-outline"></ion-icon></span>
+              <span class="text">Photos</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+
+   <!-- Profile container -->
+   <div class="profile-container">
+       <div class="profile-header" id="profileContent">
+           <img src="profilepic.jpg" alt="Profile Picture" id="profilePic" class="profile-pic">
+           <div class="profile-info">
+               <h1 id="profileName">Suraj Kumar</h1>
+               <p id="profileBio">Web Developer</p>
+           </div>
+       </div>
+       
+       <div class="profile-actions">
+           <button id="editProfileBtn">Edit Profile</button>
+           <button id="saveProfileBtn" style="display: none;">Save</button>
+       </div>
+
+       <div class="edit-section" id="editSection" style="display: none;">
+           <input type="text" id="editName" placeholder="Enter your name" />
+           <textarea id="editBio" placeholder="Enter your bio"></textarea>
+           <input type="file" id="changePic" accept="image/*" />
+       </div>
+   </div>
+     
+   <!-- Profile Page User Posts Section -->
+   <div class="user-posts">
+       <h2>User Posts</h2>
+       <div id="userPosts">
+           <!-- User posts will appear here -->
+       </div>
+   </div>
+
+   <!-- Ionicons and script -->
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
